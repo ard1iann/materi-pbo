@@ -37,8 +37,10 @@ class LatarBiru {
     private $lingkaran;
     private $segitiga;
     private $luasBiru;
+    private $r;
 
     public function __construct($r) {
+        $this->r = $r;
         $this->persegi = new Persegi($r);
         $this->lingkaran = new Lingkaran($r);
         $this->segitiga = new Segitiga($r);
